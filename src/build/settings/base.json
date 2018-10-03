@@ -1,0 +1,5 @@
+{
+    "app_name": "chemical_products_manager",
+    "main_module": "src/main/python/main.py",
+    "author": "Saber GRAF"
+}
