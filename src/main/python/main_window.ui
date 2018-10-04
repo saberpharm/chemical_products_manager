@@ -123,7 +123,7 @@
         <number>20</number>
        </property>
        <item>
-        <widget class="QPushButton" name="pushButton">
+        <widget class="QPushButton" name="search_button">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
            <horstretch>0</horstretch>
@@ -142,7 +142,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton_3">
+        <widget class="QPushButton" name="weight_button">
          <property name="minimumSize">
           <size>
            <width>0</width>
@@ -155,7 +155,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton_2">
+        <widget class="QPushButton" name="aliquot_button">
          <property name="minimumSize">
           <size>
            <width>0</width>
@@ -163,7 +163,7 @@
           </size>
          </property>
          <property name="text">
-          <string>aliquot</string>
+          <string>Aliquot</string>
          </property>
         </widget>
        </item>

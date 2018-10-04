@@ -8,7 +8,6 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
-
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
@@ -66,23 +65,23 @@ class Ui_MainWindow(object):
         self.horizontalLayout = QtWidgets.QHBoxLayout()
         self.horizontalLayout.setContentsMargins(20, -1, 20, -1)
         self.horizontalLayout.setObjectName("horizontalLayout")
-        self.pushButton = QtWidgets.QPushButton(self.verticalLayoutWidget)
+        self.search_button = QtWidgets.QPushButton(self.verticalLayoutWidget)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.pushButton.sizePolicy().hasHeightForWidth())
-        self.pushButton.setSizePolicy(sizePolicy)
-        self.pushButton.setMinimumSize(QtCore.QSize(0, 50))
-        self.pushButton.setObjectName("pushButton")
-        self.horizontalLayout.addWidget(self.pushButton)
-        self.pushButton_3 = QtWidgets.QPushButton(self.verticalLayoutWidget)
-        self.pushButton_3.setMinimumSize(QtCore.QSize(0, 50))
-        self.pushButton_3.setObjectName("pushButton_3")
-        self.horizontalLayout.addWidget(self.pushButton_3)
-        self.pushButton_2 = QtWidgets.QPushButton(self.verticalLayoutWidget)
-        self.pushButton_2.setMinimumSize(QtCore.QSize(0, 50))
-        self.pushButton_2.setObjectName("pushButton_2")
-        self.horizontalLayout.addWidget(self.pushButton_2)
+        sizePolicy.setHeightForWidth(self.search_button.sizePolicy().hasHeightForWidth())
+        self.search_button.setSizePolicy(sizePolicy)
+        self.search_button.setMinimumSize(QtCore.QSize(0, 50))
+        self.search_button.setObjectName("search_button")
+        self.horizontalLayout.addWidget(self.search_button)
+        self.weight_button = QtWidgets.QPushButton(self.verticalLayoutWidget)
+        self.weight_button.setMinimumSize(QtCore.QSize(0, 50))
+        self.weight_button.setObjectName("weight_button")
+        self.horizontalLayout.addWidget(self.weight_button)
+        self.aliquot_button = QtWidgets.QPushButton(self.verticalLayoutWidget)
+        self.aliquot_button.setMinimumSize(QtCore.QSize(0, 50))
+        self.aliquot_button.setObjectName("aliquot_button")
+        self.horizontalLayout.addWidget(self.aliquot_button)
         self.verticalLayout.addLayout(self.horizontalLayout)
         MainWindow.setCentralWidget(self.centralwidget)
 
@@ -92,9 +91,9 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.label.setText(_translate("MainWindow",
-                                      "<html><head/><body><p><span style=\" color:#ff0000;\">Chemical Prodcuts Manager</span></p></body></html>"))
+        self.label.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#ff0000;\">Chemical Prodcuts Manager</span></p></body></html>"))
         self.label_2.setText(_translate("MainWindow", "Please choose an option"))
-        self.pushButton.setText(_translate("MainWindow", "Research"))
-        self.pushButton_3.setText(_translate("MainWindow", "Weight"))
-        self.pushButton_2.setText(_translate("MainWindow", "aliquot"))
+        self.search_button.setText(_translate("MainWindow", "Research"))
+        self.weight_button.setText(_translate("MainWindow", "Weight"))
+        self.aliquot_button.setText(_translate("MainWindow", "Aliquot"))
+
