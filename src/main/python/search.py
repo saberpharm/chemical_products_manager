@@ -14,6 +14,8 @@ class SearchDialog(QDialog):
 
         self.ui.search_button.clicked.connect(self.search_button_clicked)
 
+        # "G:\07 Informatique\03 Softwares\01 Script\Chemical Products Manager"
+        # "C:\Users\saber.graf\PycharmProjects\chemical_products_manager\src\main\resources"
         wb = load_workbook(r"C:\Users\saber.graf\PycharmProjects\chemical_products_manager\src\main\resources"
                            r"\DR-PNS 35-N°67.xlsx", data_only=True)
 

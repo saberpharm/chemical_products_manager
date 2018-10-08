@@ -25,11 +25,11 @@ class MainWindow(QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
 
-        self.search_dialog = SearchDialog()
-
+        self.search_dialog = None
         self.ui.search_button.clicked.connect(self.search_button_clicked)
 
     def search_button_clicked(self):
+        self.search_dialog = SearchDialog()
         self.search_dialog.show()
 
 

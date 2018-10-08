@@ -2,12 +2,12 @@ from time import sleep
 
 from PyQt5 import QtCore
 
-from src.main.python.main import AppContext
+from src.main.python.main import MainWindow
 
 
 def test_main_window(qtbot):
     # If a user want to use the program
-    window = AppContext().window
+    window = MainWindow()
     qtbot.addWidget(window)
 
     ui = window.ui
@@ -23,7 +23,7 @@ def test_main_window(qtbot):
 
 def test_search_button(qtbot):
     # if a user want to search for a product
-    window = AppContext().window
+    window = MainWindow()
 
     qtbot.addWidget(window)
 
@@ -32,6 +32,4 @@ def test_search_button(qtbot):
     qtbot.mouseClick(search_button, QtCore.Qt.LeftButton)
 
     # a new dialog must show
-    # TODO
-
-    sleep(3)
+    assert window.search_dialog.isHidden() is not True
